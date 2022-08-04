@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  <link rel="stylesheet" href="1style.css">
+  
+</head>
+
+<body onload="get_info()" style="background-color:#0f4564; ">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(24, 125, 219)">
+    <a class="navbar-brand" href="#"><b>Talkers</b></a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Media.html"><b>New</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://dakshesh252.github.io/projects/"><b>Math game</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://dakshesh252.github.io/pro_-83/"><b>paint game</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><b>About Us</b></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+
+
+
+        <label id="user-avatar">😂</label>&nbsp; &nbsp; &nbsp; &nbsp;
+        <label id="user-name1"><b>User</b></label>
+
+
+
+
+      </form>
+
+
+    </div>
+  </nav>
+
+  <br>
+ <br>
+
+  <div id="slides" class="carousel slide" data-ride="carousel">  
+    <ol class="carousel-indicators">   
+        <li data-target="#slides"  data-slide-to="0" class="active1"></li>  
+        <li data-target="#slides" data-slide-to="1" ></li>  
+          
+    </ol>  
+  
+    <div class="carousel-inner">  
+        <div class="carousel-item active">  
+        <img id="img1"src="Annotation 2022-07-16 143006.png" width="100%" height="100%">  
+           
+        </div>  
+        <div class="carousel-item" style="width: 100%">  
+        <img id="img1"src="Annotation 2022-07-17 213519.png" width="100%" height="100%">  
+        </div>  
+        </div> </div>  
+     <br><br><br>
+
+     <div id="uploaded_media">
+
+     </div>
+     <center>
+      <div class="input_div_message_page" >
+          <label>Send :</label>
+         <span> <input type="text"  id="msg" class="form-control" placeholder="Message"> 
+          <button onclick="send()" class="btn btn-success" >Send</button>
+      </div>
+  </center>
+  <script src="Media.js"></script>
+</body>
+
+</html>
